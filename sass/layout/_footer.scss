@@ -1,0 +1,47 @@
+.footer {
+    background-color: #e9f3fd;
+    font-size: 1.4rem;
+    padding-bottom: 30px;
+    &__contact {
+        padding: 2rem;
+        width: 80%;
+        float: right;
+        color: rgb(21, 175, 137);
+        &__shape {
+            width: 20rem;
+            height: 20rem;
+            float: center;
+            clip-path: circle(50% at 50% 50%);
+            -webkit-clip-path: circle(50% at 50% 50%);
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+    .about-me {
+        color: rgb(59, 20, 199);
+        // font-size: 1.8rem;
+        // display: flex;
+        // justify-content: space-between;
+        .markedAbout {
+            font-size: 2.5rem;
+            font-weight: 500;
+            .contactDetails {
+                // display: flex;
+                // justify-content: space-between;
+                font-size: 1.5rem;
+                font-weight: 700;
+                .icon {
+                    width: 20px;
+                }
+            }
+        }
+        //padding-right: 10px;
+    }
+}
+
+.wave-container2>svg {
+    display: block;
+    position: relative;
+    top: 0%;
+}
