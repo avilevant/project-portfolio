@@ -10,9 +10,17 @@
         left: 77%;
         transform: translate(-50%, -50%);
         z-index: 100;
+        
     }
     &__logo {
         height: 75rem;
+
+        @include respond(tab-land){
+          height:55rem;
+         }
+        @include respond(phone){
+          height:36rem;
+         }
     }
     &__text-box {
         position: relative;
@@ -31,28 +39,3 @@
     top: 20%;
 }
 
-.heading-primary--main1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    padding-right: 1rem;
-    padding-bottom: 2rem;
-}
-
-.heading-primary--main2 {
-    font-size: 3rem;
-    z-index: 100;
-}
-
-.heading-primary--main3 {
-    font-size: 2.5rem;
-    z-index: 100;
-    //  padding-right: 10rem;
-}
-
-.heading-primary--main4 {
-    font-size: 2rem;
-    // padding-top: 5rem;
-    float: right;
-    padding-bottom: 1rem;
-    z-index: 100;
-}

@@ -3,13 +3,33 @@
     margin: 0 auto;
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+          @include respond(tab-port){
+          margin-bottom:  6rem;
+         }
     }
+      
+     @include respond(tab-port){
+          width:  55rem;
+         }
+
     @include clearfix;
     [class^="col-"] {
         float: left;
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+              @include respond(tab-port){
+    margin-bottom:6rem;
+    margin-right:0;
+   
+}
         }
+    
+    @include respond(tab-port){
+    width:100% !important;
+   
+}
+
     }
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);
