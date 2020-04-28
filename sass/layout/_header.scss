@@ -71,8 +71,7 @@
     position: relative;
     top: 20%;
     @include respond(phone){
-        //  top:47%;
-           top:60%;
+        display:none;
          }
 }
 

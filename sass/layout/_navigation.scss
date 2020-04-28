@@ -76,7 +76,7 @@
          @include respond(phone){
          width:30%;
          top: 150%;
-         left: 87%;       
+         left: 84%;       
          }
 
     }
@@ -111,7 +111,7 @@
         transform: scale(12);
         
         @include respond(phone){
-         transform: scale(8);
+         transform: scale(11);
           
          }
     }

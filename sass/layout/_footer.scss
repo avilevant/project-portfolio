@@ -43,16 +43,21 @@
             font-weight: 500;
          
             .contactDetails {
-              //  margin-top:2rem;
-                font-size: 3rem;
+              
+                font-size: 2.5rem;
                 font-weight: 700;
-                 text-decoration: none !important;
+                
+                 .removeDeco{
+                     text-decoration: none;
+                     color:white;
+                     
+                 }
                 .icon {
                     width: 30px;
                 }
             }
         }
-        //padding-right: 10px;
+       
     }
 }
 
