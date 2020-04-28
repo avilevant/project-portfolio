@@ -6,10 +6,17 @@
           @include respond(tab-port){
           margin-bottom:  6rem;
          }
+
+          @include respond(phone){
+          width:  80vw;
+          margin-bottom:  5rem;
+         }
     }
+
+   
       
      @include respond(tab-port){
-          width:  55rem;
+          width:  80vw;
          }
 
     @include clearfix;
@@ -23,6 +30,12 @@
     margin-right:0;
    
 }
+ @include respond(phone){
+          
+          margin-bottom:  11rem;
+         }
+
+
         }
     
     @include respond(tab-port){
@@ -33,6 +46,7 @@
     }
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);
+        
     }
     .col-1-of-3 {
         width: calc((100% - 2* #{$gutter-horizontal}) / 3);

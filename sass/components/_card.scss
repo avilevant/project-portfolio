@@ -135,5 +135,10 @@
     &__new--buttons {
         display: inline-block;
         text-align: center;
+        @include respond(phone){
+
+         margin: 0 auto;
+          
+         }
     }
 }
