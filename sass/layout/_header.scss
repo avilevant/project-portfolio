@@ -1,55 +1,38 @@
 .header {
     height: 100vh;
     background-color: #0069ca;
-    background-size:cover;
+    background-size: cover;
     background-position: top;
-
     &__logo-box {
         position: absolute;
         top: 40%;
         left: 77%;
         transform: translate(-50%, -50%);
         z-index: 100;
-           @include respond(phone){
-          top: 75%;
-        left: 50%;
-        
-         }
+        @include respond(phone) {
+            top: 65%;
+            left: 50%;
+        }
     }
-         
-     
-
-        
     &__logo {
         height: 75rem;
-
-        @include respond(tab-land){
-          height:55rem;
-         }
-       
-    }
-
-    &__logo__mobile{
-        display:none;
-    }
-
-    @include respond(phone){
-        &__logo{
-             display:none;
+        @include respond(tab-land) {
+            height: 55rem;
         }
-
-        &__logo__mobile{
-         display:block;   
-         height:auto;
-         width:100vw;
     }
-       
-         }
-
-    
-
-
-
+    &__logo__mobile {
+        display: none;
+    }
+    @include respond(phone) {
+        &__logo {
+            display: none;
+        }
+        &__logo__mobile {
+            display: block;
+            height: auto;
+            width: 100vw;
+        }
+    }
     &__text-box {
         position: relative;
         top: 25%;
@@ -58,11 +41,11 @@
         font-size: 1rem;
         transform: translate(-50%, -50%);
         text-align: left;
-        @include respond(phone){
-          width:64%;
-          line-height:1.4;
-          left: 40%;
-         }
+        @include respond(phone) {
+            width: 64%;
+            line-height: 1.4;
+            left: 40%;
+        }
     }
 }
 
@@ -70,8 +53,7 @@
     display: block;
     position: relative;
     top: 20%;
-    @include respond(phone){
-        display:none;
-         }
+    @include respond(phone) {
+        display: none;
+    }
 }
-
