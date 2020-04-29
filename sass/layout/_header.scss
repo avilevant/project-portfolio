@@ -10,7 +10,7 @@
         transform: translate(-50%, -50%);
         z-index: 100;
         @include respond(phone) {
-            top: 65%;
+            top: 60%;
             left: 50%;
         }
     }

@@ -228,7 +228,7 @@ body {
     z-index: 100; }
     @media (max-width: 37.5em) {
       .header__logo-box {
-        top: 75%;
+        top: 60%;
         left: 50%; } }
   .header__logo {
     height: 75rem; }
