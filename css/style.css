@@ -330,10 +330,15 @@ body {
   perspective: 150rem;
   -moz--perspective: 150rem;
   position: relative;
-  height: 35rem; }
+  height: 65vh; }
+  @media (max-width: 37.5em) {
+    .card {
+      height: 25vh;
+      margin: 0; } }
   .card__side {
+    margin: auto;
     font-size: 2rem;
-    height: 30rem;
+    height: 65vh;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -343,6 +348,12 @@ body {
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    @media (max-width: 37.5em) {
+      .card__side {
+        height: 21vh; } }
+    @media (min-width: 112.5em) {
+      .card__side {
+        height: 55vh; } }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
@@ -358,25 +369,23 @@ body {
   .card:hover .card__side--back {
     transform: rotateY(0); }
   .card__picture {
-    height: 30rem;
-    width: 56rem;
+    height: 100%;
+    width: 100%;
     background-size: cover;
     background-blend-mode: screen;
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%, -50%); }
     @media (max-width: 56.25em) {
       .card__picture {
         left: 50%; } }
     .card__picture--1 {
-      background-image: url(../img/facerecoapp.png); }
+      background-image: url(../img/1.jpg); }
     .card__picture--2 {
-      background-image: url(../img/crownproject.jpg); }
+      background-image: url(../img/2.jpg); }
     .card__picture--3 {
-      background-image: url(../img/site.jpg); }
-    .card__picture--4 {
-      background-image: url(../img/recepiebook.png); }
+      background-image: url(../img/3.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -389,19 +398,7 @@ body {
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    /*  &--1 {
-            //   background-image: linear-gradient(to right bottom, rgba( $color-secondary-light, .85), rgba(#ff7730, .85))
-            background-color: rgb(223, 214, 214);
-        }
-        &--2 {
-            // background-image: linear-gradient(to right bottom, rgba( $color-primary-light, .85), rgba($color-primary-dark, .85))
-            background-color: rgb(223, 214, 214);
-        }
-        &--3 {
-            //  background-image: linear-gradient(to right bottom, rgba( $color-tertiary-light, .85), rgba($color-tertiary-dark, .85))
-            background-color: rgb(223, 214, 214);
-        }*/ }
+    box-decoration-break: clone; }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -428,31 +425,37 @@ body {
     font-size: 2rem;
     letter-spacing: .3rem;
     margin-top: 1.5rem; }
+    @media (max-width: 37.5em) {
+      .card__price-only {
+        font-size: 1.5rem; } }
   .card__price-value {
     font-size: 3rem;
     font-weight: 200;
     text-transform: uppercase;
     margin-top: 2.5rem;
     letter-spacing: .3rem; }
+    @media (max-width: 37.5em) {
+      .card__price-value {
+        font-size: 2rem; } }
   .card__new--buttons {
     display: inline-block;
-    text-align: center; }
-    @media (max-width: 37.5em) {
-      .card__new--buttons {
-        margin: 0 auto; } }
+    text-align: center;
+    margin: 5vh auto; }
 
 .row {
   max-width: 102rem;
-  margin: 0 auto; }
+  height: 80vh;
+  margin: auto; }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
-    @media (max-width: 56.25em) {
-      .row:not(:last-child) {
-        margin-bottom: 6rem; } }
-    @media (max-width: 37.5em) {
-      .row:not(:last-child) {
-        width: 80vw;
-        margin-bottom: 5rem; } }
+    margin-bottom: 20vh; }
+  @media (max-width: 56.25em) {
+    .row {
+      margin-bottom: 6rem; } }
+  @media (max-width: 37.5em) {
+    .row {
+      width: 80vw;
+      height: 100%;
+      margin-bottom: 0; } }
   @media (max-width: 56.25em) {
     .row {
       width: 80vw; } }
@@ -490,7 +493,8 @@ body {
 .footer {
   background-color: #0069ca;
   font-size: 1.4rem;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  margin: 0 auto; }
   .footer__contact {
     padding: 2rem;
     width: 80%;
