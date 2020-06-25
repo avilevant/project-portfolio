@@ -417,6 +417,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%; }
+    @media (max-width: 37.5em) {
+      .card__cta {
+        height: 90%;
+        overflow: auto; } }
   .card__price-box {
     text-align: center;
     color: #fff;
@@ -425,9 +429,6 @@ body {
     font-size: 2rem;
     letter-spacing: .3rem;
     margin-top: 1.5rem; }
-    @media (max-width: 37.5em) {
-      .card__price-only {
-        font-size: 1.5rem; } }
   .card__price-value {
     font-size: 3rem;
     font-weight: 200;
@@ -436,7 +437,7 @@ body {
     letter-spacing: .3rem; }
     @media (max-width: 37.5em) {
       .card__price-value {
-        font-size: 2rem; } }
+        font-size: 2.5rem; } }
   .card__new--buttons {
     display: inline-block;
     text-align: center;
