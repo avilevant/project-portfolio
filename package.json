@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "compile:sass1": "node-sass sass/main.scss css/style.css -w",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d dist"
     },
     "author": "avilevant",
     "license": "ISC",
