@@ -25,13 +25,19 @@
             <ul class="navigation__list">
 
                 <li class="navigation__item">
-                    <a href="#projects" class="navigation__link"> Projects </a></li>
+                    <a href="#projects" class="navigation__link" onclick="CloseMenu()"> Projects </a></li>
                 <li class="navigation__item">
-                    <a href="#contact" class="navigation__link">contact </a></li>
+                    <a href="#contact" class="navigation__link" onclick="CloseMenu()">contact </a></li>
 
             </ul>
 
         </nav>
+
+        <script>
+            function CloseMenu() {
+                document.getElementById("navi-toggle").checked = false;
+            }
+        </script>
     </div>
 
     <header class='header wave-container'>
@@ -43,7 +49,7 @@
         <div class="header__text-box">
             <h1 class="heading-primary">
                 <span class="heading-primary--main--1">avi levant</span><br>
-                <span class="heading-primary--main--2">full stack developer</span>
+                <span class="heading-primary--main--2">Full Stack Developer</span>
                 <div>&nbsp;</div>
                 <span class="heading-primary--main--3">“Personal development is a major time-saver. The better you become, the less time it takes you to achieve your goals.”</span>
                 <div></div>
@@ -217,7 +223,7 @@
                 <div class="about-me" id='contact'>
 
                     <div class="markedAbout">
-                        developing high quality software, and solving coding problems with determination, focus, passion and creativity is the path I had chosen.<br><br>
+                        Developing high quality software, and solving coding problems with determination, focus, passion and creativity is the path I had chosen.<br><br>
 
 
                         </p>
