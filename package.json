@@ -4,14 +4,12 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "compile:sass1": "node-sass sass/main.scss css/style.css -w",
-        "deploy": "gh-pages -d dist"
+        "compile:sass1": "node-sass sass/main.scss css/style.css -w"
     },
     "author": "avilevant",
     "license": "ISC",
     "homepage": "https://avilevant.github.io/project-portfolio",
     "dependencies": {
-        "gh-pages": "^3.1.0",
         "live-server": "^1.2.1",
         "node-sass": "^4.14.1"
     }
