@@ -12,8 +12,6 @@ body {
     color: #fff;
     // text-transform: uppercase;
     //  margin-bottom: 2rem;
-
-
     &--main {
         display: block;
         font-size: 6rem;
@@ -22,56 +20,50 @@ body {
         animation-name: movInLeft;
         animation-duration: 2s;
         animation-timing-function: ease-out;
-
-        @include respond(phone){
+        @include respond(phone) {
             letter-spacing: 1rem;
-            font-size:5rem;
-}
-
+            font-size: 5rem;
+        }
         &--1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    padding-right: 1rem;
-    padding-bottom: 2rem;
-           @include respond(phone){
-    font-size:4rem;
-    letter-spacing:.5rem;
-}
-}
-
-&--2 {
-    font-size: 3rem;
-    z-index: 100;
-             @include respond(phone){
-    font-size:3rem;
-    letter-spacing:.2rem;
-    margin-bottom:5rem;
-}
-}
-
-&--3 {
-    font-size: 2.5rem;
-    z-index: 100;
-             @include respond(phone){
-    font-size:2rem;
-    letter-spacing:.2rem;
-    line-height: .5rem;
-    
-}
-    //  padding-right: 10rem;
-}
-
-&--4{
-    font-size: 2rem;
-    // padding-top: 5rem;
-    float: right;
-    padding-bottom: 1rem;
-    z-index: 100;
-             @include respond(phone){
-    font-size:1.5rem;
-    letter-spacing:.2rem;
-}
-}
+            font-size: 4rem;
+            text-transform: uppercase;
+            padding-right: 1rem;
+            padding-bottom: 2rem;
+            @include respond(phone) {
+                font-size: 4rem;
+                letter-spacing: .5rem;
+            }
+        }
+        &--2 {
+            font-size: 3rem;
+            z-index: 100;
+            @include respond(phone) {
+                font-size: 3rem;
+                letter-spacing: .2rem;
+                margin-bottom: 5rem;
+            }
+        }
+        &--3 {
+            font-size: 2.5rem;
+            z-index: 100;
+            @include respond(phone) {
+                font-size: 2rem;
+                letter-spacing: .2rem;
+                line-height: .5rem;
+            }
+            //  padding-right: 10rem;
+        }
+        &--4 {
+            font-size: 2rem;
+            // padding-top: 5rem;
+            float: right;
+            padding-bottom: 1rem;
+            z-index: 100;
+            @include respond(phone) {
+                font-size: 1.5rem;
+                letter-spacing: .2rem;
+            }
+        }
     }
     &--sub {
         display: block;
@@ -95,11 +87,10 @@ body {
     color: #0069ca;
     -webkit-background-clip: text;
     transition: all.2s;
-
-             @include respond(phone){
-    font-size:2.5rem;
-    letter-spacing:.5rem;
-}
+    @include respond(phone) {
+        font-size: 2.5rem;
+        letter-spacing: .5rem;
+    }
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.5);
         text-shadow: .5rem 1rem 2rem rgba(#000, .2);
